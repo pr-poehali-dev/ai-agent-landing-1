@@ -12,6 +12,12 @@ const Index = () => {
         "Доступ к судебной базе данных",
         "Поиск релевантных прецедентов",
       ],
+      benefits: [
+        { icon: "Clock", text: "Автоматизируйте рутину - освободите время для важных дел" },
+        { icon: "Lightbulb", text: "Исключите ошибки - минимизируйте юридические риски" },
+        { icon: "DollarSign", text: "Сократите расходы на юридическое сопровождение на 70%" },
+        { icon: "Rocket", text: "Увеличьте эффективность работы в 10 раз" },
+      ],
       result: "Сокращает время на рутинные задачи в 10 раз",
       link: "https://clck.ru/3QnM5Z",
     },
@@ -22,6 +28,11 @@ const Index = () => {
         "Диагностика неисправностей",
         "Расчет стоимости ремонта",
         "Поиск запчастей",
+      ],
+      benefits: [
+        { icon: "Moon", text: "Ночные заявки: клиент пишет ночью, а вы спите. Михалыч ответил за 60 секунд" },
+        { icon: "TrendingDown", text: "Дорогие запчасти: берете цену у одного поставщика, не знаете что есть цена дешевле на 20-30%" },
+        { icon: "AlertCircle", text: "Перегрузка мастеров: мастер ремонтирует и одновременно отвечает на консультации" },
       ],
       result: "Профессиональная помощь онлайн 24/7",
       link: "https://clck.ru/3QnnYQ",
@@ -75,10 +86,10 @@ const Index = () => {
             {agents.map((agent, index) => (
               <Card
                 key={index}
-                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-400 bg-white"
+                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-400 bg-white flex flex-col"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-8">
+                <CardContent className="p-8 flex flex-col flex-grow">
                   <div className="mb-6 flex justify-center">
                     <img 
                       src={agent.image} 
@@ -97,18 +108,34 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
+                  
+                  <div className="mb-6">
+                    <h4 className="font-bold text-lg mb-4 text-gray-800">Почему важен для бизнеса:</h4>
+                    <ul className="space-y-3">
+                      {agent.benefits.map((benefit, i) => (
+                        <li key={i} className="flex items-start gap-3 text-gray-700 text-sm">
+                          <Icon name={benefit.icon} className="text-purple-500 mt-1 flex-shrink-0" size={18} />
+                          <span>{benefit.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                   <div className="bg-gradient-to-r from-purple-100 to-cyan-100 p-4 rounded-lg mb-6">
                     <p className="text-sm font-semibold text-gray-800">
                       <Icon name="Sparkles" className="inline mr-2 text-purple-600" size={18} />
                       {agent.result}
                     </p>
                   </div>
-                  <a href={agent.link} target="_blank" rel="noopener noreferrer">
-                    <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-semibold py-6 text-lg group">
-                      Попробовать бесплатно
-                      <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                    </Button>
-                  </a>
+                  
+                  <div className="mt-auto">
+                    <a href={agent.link} target="_blank" rel="noopener noreferrer">
+                      <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-semibold py-6 text-lg group">
+                        Попробовать бесплатно
+                        <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             ))}
