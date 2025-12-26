@@ -47,8 +47,12 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-cyan-50">
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-16 animate-fade-in">
-          <div className="inline-block mb-6">
-            <div className="text-6xl mb-4 animate-float">🚀</div>
+          <div className="inline-block mb-8">
+            <img 
+              src="https://cdn.poehali.dev/files/логотип.png" 
+              alt="AI Скорая помощь"
+              className="w-64 md:w-80 mx-auto animate-float"
+            />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-cyan-500 bg-clip-text text-transparent">
             AI-Агенты для вашего бизнеса
