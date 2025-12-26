@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const agents = [
     {
-      emoji: "⚖️",
+      image: "https://cdn.poehali.dev/files/СС.jpg",
       title: "AI-Юрисконсульт «Семён Семёныч»",
       features: [
         "Анализ документов и договоров",
@@ -16,7 +16,7 @@ const Index = () => {
       link: "https://clck.ru/3QnM5Z",
     },
     {
-      emoji: "🚗",
+      image: "https://cdn.poehali.dev/files/Михалыч.png",
       title: "AI-Автомеханик «Михалыч»",
       features: [
         "Диагностика неисправностей",
@@ -79,7 +79,13 @@ const Index = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-8">
-                  <div className="text-5xl mb-4">{agent.emoji}</div>
+                  <div className="mb-6 flex justify-center">
+                    <img 
+                      src={agent.image} 
+                      alt={agent.title}
+                      className="w-40 h-40 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">
                     {agent.title}
                   </h3>
