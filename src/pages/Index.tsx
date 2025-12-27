@@ -136,12 +136,15 @@ const Index = () => {
                   </div>
                   
                   <div className="mt-auto">
-                    <a href={agent.link}>
-                      <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-semibold py-6 text-lg group">
+                    <Button 
+                      asChild
+                      className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-semibold py-6 text-lg group"
+                    >
+                      <a href={agent.link}>
                         Попробовать бесплатно
                         <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                      </Button>
-                    </a>
+                      </a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
