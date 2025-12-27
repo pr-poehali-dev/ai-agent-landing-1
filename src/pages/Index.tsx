@@ -41,7 +41,7 @@ const Index = () => {
 
   const results = [
     {
-      title: "Строительный бизнес",
+      title: "✅ Строительный бизнес: смета за 5 минут (было 3 дня)",
       before: "3 дня на смету",
       after: "5 минут",
       icon: "Building2",
@@ -129,7 +129,7 @@ const Index = () => {
                   </div>
                   
                   <div className="mt-auto">
-                    <a href={agent.link} target="_blank" rel="noopener noreferrer">
+                    <a href={agent.link}>
                       <Button className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600 text-white font-semibold py-6 text-lg group">
                         Попробовать бесплатно
                         <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
