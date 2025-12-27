@@ -157,17 +157,17 @@ const Index = () => {
             {results.map((result, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-purple-50 to-cyan-50 p-8 rounded-2xl border-2 border-purple-200"
+                className="bg-gradient-to-br from-purple-50 to-cyan-50 p-8 rounded-2xl border-2 border-purple-200 flex flex-col"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-r from-purple-600 to-cyan-500 p-3 rounded-xl">
+                  <div className="bg-gradient-to-r from-purple-600 to-cyan-500 p-3 rounded-xl flex-shrink-0">
                     <Icon name={result.icon} className="text-white" size={28} />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800">
+                  <h3 className="text-xl font-bold text-gray-800 leading-tight">
                     {result.title}
                   </h3>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 mt-auto">
                   <div className="flex items-center gap-3">
                     <Icon name="Clock" className="text-red-500" size={20} />
                     <span className="text-gray-600 line-through">{result.before}</span>
