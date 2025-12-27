@@ -185,7 +185,7 @@ const Index = () => {
         <section className="bg-gradient-to-r from-purple-600 to-cyan-500 rounded-3xl p-12 text-white shadow-2xl max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Готовы закрыть боли вашего бизнеса?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Заинтересовало? Давайте обсудим ваш проект! 🤗
+            Заинтересовало? Давайте обсудим задачи для вашего бизнеса! 🤗
           </p>
           
           <div className="space-y-6">
