@@ -55,31 +55,38 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-cyan-50 to-blue-100">
-      <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-500 to-cyan-500 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-pink-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-yellow-300 rounded-full blur-3xl"></div>
+      </div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+      </div>
+      <div className="container mx-auto px-4 py-8 relative z-10">
         <header className="text-center mb-16 animate-fade-in">
           <div className="inline-block mb-8">
             <img 
               src="https://cdn.poehali.dev/files/логотип.png" 
               alt="AI Скорая помощь"
-              className="w-64 md:w-80 mx-auto animate-float"
+              className="w-48 md:w-56 mx-auto animate-float"
             />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-cyan-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
             AI-Агенты для вашего бизнеса
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto">
-            Привет! Меня зовут <span className="font-semibold text-purple-600">Юля</span>, наша команда разрабатывает и запускает 
+          <p className="text-xl md:text-2xl text-white mb-4 max-w-3xl mx-auto drop-shadow-md">
+            Привет! Меня зовут <span className="font-semibold text-yellow-300">Юля</span>, наша команда разрабатывает и запускает 
             AI-агентов любого уровня
           </p>
-          <div className="flex items-center justify-center gap-3 text-lg md:text-xl text-gray-600">
-            <Icon name="Zap" className="text-purple-500" size={28} />
+          <div className="flex items-center justify-center gap-3 text-lg md:text-xl text-white">
+            <Icon name="Zap" className="text-yellow-300" size={28} />
             <p>Как <span className="font-semibold">Скорая помощь</span> — быстро реагируем на ваш запрос</p>
           </div>
         </header>
 
         <section className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">
             🎁 Пройди тест-драйв наших агентов
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -142,7 +149,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="mb-20 bg-gradient-to-br from-white to-cyan-50 rounded-3xl p-12 shadow-xl max-w-5xl mx-auto">
+        <section className="mb-20 bg-white/95 backdrop-blur-sm rounded-3xl p-12 shadow-2xl max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Наши результаты
           </h2>
