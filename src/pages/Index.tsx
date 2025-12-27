@@ -13,8 +13,8 @@ const Index = () => {
         "Поиск релевантных прецедентов",
       ],
       benefits: [
-        { icon: "Clock", text: "Автоматизируйте рутину - освободите время для важных дел" },
-        { icon: "Lightbulb", text: "Исключите ошибки - минимизируйте юридические риски" },
+        { icon: "Clock", text: "Автоматизируйте рутину — освободите время для важных дел" },
+        { icon: "Lightbulb", text: "Исключите ошибки — минимизируйте юридические риски" },
         { icon: "DollarSign", text: "Сократите расходы на юридическое сопровождение на 70%" },
         { icon: "Rocket", text: "Увеличьте эффективность работы в 10 раз" },
       ],
@@ -116,7 +116,7 @@ const Index = () => {
                     ))}
                   </ul>
                   
-                  <div className="mb-6">
+                  <div className="mb-6 flex-grow">
                     <h4 className="font-bold text-lg mb-4 text-gray-800">Почему важен для бизнеса:</h4>
                     <ul className="space-y-3">
                       {agent.benefits.map((benefit, i) => (
