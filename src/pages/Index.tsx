@@ -55,7 +55,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-cyan-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-cyan-50 to-blue-100">
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-16 animate-fade-in">
           <div className="inline-block mb-8">
@@ -86,7 +86,7 @@ const Index = () => {
             {agents.map((agent, index) => (
               <Card
                 key={index}
-                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-400 bg-white flex flex-col"
+                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-400 bg-gradient-to-br from-white to-purple-50 flex flex-col"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-8 flex flex-col flex-grow">
@@ -142,7 +142,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="mb-20 bg-white rounded-3xl p-12 shadow-xl max-w-5xl mx-auto">
+        <section className="mb-20 bg-gradient-to-br from-white to-cyan-50 rounded-3xl p-12 shadow-xl max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Наши результаты
           </h2>
