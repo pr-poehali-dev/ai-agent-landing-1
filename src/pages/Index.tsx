@@ -47,7 +47,7 @@ const Index = () => {
       icon: "Building2",
     },
     {
-      title: "Fashion-retail",
+      title: "✅ Fashion-retail: автоматический парсинг конкурентов (было вручную)",
       before: "Ручной анализ конкурентов",
       after: "Автоматический парсинг",
       icon: "TrendingUp",
